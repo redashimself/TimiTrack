@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace TimiTrack.Items;
+namespace TimiTrack.Products;
 using Volo.Abp.Domain.Entities.Auditing;
 
 public class Items
 {
-    public class Item : AuditedAggregateRoot<Guid>
+    public class Product : AuditedAggregateRoot<Guid>
     {
         public string Name { get; set; }
 
-        public ItemType Type { get; set; }
+        public ProductType Type { get; set; }
 
         public DateTime ScrapeDate { get; set; }
 
